@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         fragmentManager.replace(R.id.placeHolderForNavButtons, NavButtons())
         fragmentManager.commit()
 
-
+        val gridFragmentManager = supportFragmentManager.beginTransaction()
+        gridFragmentManager.replace(R.id.placeHolderForGameGrid, GameGridFragment())
+        gridFragmentManager.commit()
     }
 }
